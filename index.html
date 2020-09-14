@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body onkeypress=key_in(event)>
+    <div style="padding-top:50px;margin: auto;max-width: 55%;min-width: 650px;">
+      <div class="grid-container">
+        <div id="interface" class="grid-item"></div>
+        <div onclick=f1() class="grid-item">1</div>
+        <div onclick=f2() class="grid-item">2</div>
+        <div onclick=f3() class="grid-item">3</div>
+        <div onclick=fdivide() class="grid-item">&#247</div>
+        <div onclick=f4() class="grid-item">4</div>
+        <div onclick=f5() class="grid-item">5</div>
+        <div onclick=f6() class="grid-item">6</div>
+        <div onclick=fmultiply() class="grid-item">&#215</div>
+        <div onclick=f7() class="grid-item">7</div>
+        <div onclick=f8() class="grid-item">8</div>
+        <div onclick=f9() class="grid-item">9</div>
+        <div onclick=fminus() class="grid-item">&#8722</div>
+        <div onclick=f0() class="grid-item">0</div>
+        <div onclick=fdecimal() class="grid-item">.</div>
+        <div onclick=fequal() class="grid-item">=</div>
+        <div onclick=fplus() class="grid-item">+</div>
+      </div>
+      <div class=right-sidebar>
+        <div class="side-btn" style="background-color:lightgreen" onclick=clean() >Clear</div>
+        <div class="side-btn" style="background-color:orange" onclick=backspace()>Delete</div><br>
+        <br>
+        <br>
+        <div class="slot">
+          <div  class="slot-value" onclick=copy() tabindex="0"></div>
+          <img class="slot-img" src="delete.png" alt="delete" onclick=delslot() tabindex="0">
+          <br></br>
+          <div  class="slot-value" onclick=copy() tabindex="1"></div>
+          <img class="slot-img" src="delete.png" alt="delete" onclick=delslot() tabindex="1">
+          <br></br>
+          <div class="slot-value" onclick=copy() tabindex="2"></div>
+          <img class="slot-img" src="delete.png" alt="delete" onclick=delslot() tabindex="2">
+          <br></br>
+          <div class="slot-value" onclick=copy() tabindex="3"></div>
+          <img class="slot-img" src="delete.png" alt="delete" onclick=delslot() tabindex="3">
+          <br></br>
+          <div class="slot-value" onclick=copy() tabindex="4"></div>
+          <img class="slot-img" src="delete.png" alt="delete" onclick=delslot() tabindex="4">
+          <br></br>
+          <div class="slot-value" onclick=copy() tabindex="5"></div>
+          <img class="slot-img" src="delete.png" alt="delete" onclick=delslot() tabindex="5">
+        </div>
+        <br>
+        <br>
+        <div class="side-btn" style="background-color:yellow;" onclick=add2slot()>Add to slot</div>
+        <div class="side-btn" style="background-color:red" onclick=clear_all_slot()>Clear all slot</div>
+      </div>
+    </div>
+
+    <script src="myScript.js"></script>
+    <script>
+      
+    </script>
+  </body>
+</html>

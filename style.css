@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+.grid-container {
+  border: 2px solid black;
+  display: grid;
+  float: left;
+  grid-template-columns: auto auto auto auto;
+  background-color: aqua;
+  width: 75%;
+  padding: 20px;
+  grid-gap: 10px;
+}
+
+.grid-item {
+  background-color: darkgray;
+  line-height: 85px;
+  height: 85px;
+  text-align: center;
+  border: 1px solid black;
+  font-size: 25px;
+}
+#interface ~ .grid-item:hover{
+  background-color: gray;
+  cursor: pointer;
+}
+
+#interface {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.right-sidebar {
+  float: left;
+  background-color: lightskyblue;
+  padding: 10px;
+  width: 25%;
+}
+
+.side-btn {
+  border: 2px solid black;
+  border-radius: 7px;
+  margin: 0 0 5px 0;
+  text-align: center;
+  line-height: 50px;
+  height: 50px;
+  overflow: hidden;
+}
+.side-btn:hover{
+  cursor: pointer;
+  opacity: 85%;
+}
+
+.slot {
+  box-sizing: border-box;
+}
+.slot-value {
+  border: 1px solid black;
+  float: left;
+  width: 80%;
+  height: 30px;
+  text-align: center;
+  font-size: 20px;
+  padding: 3px;
+  overflow: hidden;
+  background-color: white;
+}
+.slot-img {
+  width: 20%;
+  max-width: 30px;
+  height: 30px;
+  float: right;
+  border: 1px solid black;
+}
+.slot-value:hover, .slot-img:hover{
+  opacity: 85%;
+  cursor: pointer;
+}
